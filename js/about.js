@@ -26,6 +26,6 @@ function main(){
 
 }
 
-export default main();
+export default main;
 
 

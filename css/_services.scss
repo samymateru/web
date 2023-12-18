@@ -1,0 +1,63 @@
+.services{
+    overflow-x: hidden;
+   
+}
+.services-wrapper{
+    background-color: rgb(0, 0, 0);
+    width: max-content;
+    padding-inline: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.services-content{
+    width: 300vw;
+    display: flex;
+    gap: 1rem;
+    height: 100svh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    > h1{
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 275px;
+        z-index: 1000;
+    }
+    
+
+    
+    
+
+    .service{
+        background-color: rgb(145, 143, 143);
+        width: 100vw;
+        height: 70svh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        
+    }
+}
+
+
+.pin-spacer{
+    background-color: black;
+    padding:  0 !important;
+}
+
+
+@media (width < 1000px){
+
+    .services-content{
+        > h1{
+            left: -50px;
+        }
+    }
+
+}

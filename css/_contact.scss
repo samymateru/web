@@ -1,0 +1,155 @@
+.contact{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+    position: relative;
+
+    > h1{
+        position: absolute;
+        top: 10px;
+        color: white;
+    }
+
+
+}
+
+.contact-wrapper{
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    display: flex;
+    width: min(100% - 2rem, 100ch);
+    border-radius: 2rem;
+    box-shadow: 1px 1px 100px 1px rgba(158, 41, 41, 0.8);
+    
+
+    > div{
+        flex: 1;
+    }
+
+}
+
+.contact-right{
+    background-color: rgba(105, 105, 105, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    min-width: 300px;
+
+    > h1{
+        color: red;
+        text-align: center;
+    }
+}
+
+.contact-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    > input{
+
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+        border-radius: 100vmax;
+    }
+
+    > button{
+        align-self: flex-end;
+        padding: 0.5rem 2rem;
+        border-radius: 100vmax;
+        background-color: brown;
+        border: none;
+        outline: none;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        &:hover{
+            transform: scale(1.1);
+            transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+    }
+
+    > label{
+        color: white;
+        font-size: clamp(1rem, 3vw, 1.3rem);
+    }
+}
+
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > h1{
+        padding-bottom: 1rem;
+        color: red;
+        text-align: center;
+
+    }
+
+    .map-link{
+        cursor: pointer;
+        transition: all 200ms linear;
+        padding-inline: 0.2rem;
+        
+        &:hover{
+            background-color: rgb(52, 52, 52);
+            color: black;
+            scale: 1.03;
+            border-radius: 100vmax;
+        }
+    }
+
+    .left-content{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        > svg{
+            width: 32px;
+            aspect-ratio: 1;
+        }
+
+        > h3{
+            color: white;
+        }
+    }
+
+   
+}
+
+.animated-icon{
+    fill: green;
+    animation: animated-icon 1s forwards infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+@keyframes animated-icon{
+    
+
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+
+@media (width < 1000px){
+    .contact-wrapper{
+        flex-direction: column-reverse;
+        padding: 1rem;
+        gap: 3rem;
+        width: 100%;
+        
+    }
+
+    
+}
